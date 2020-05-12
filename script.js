@@ -3,7 +3,9 @@ let searchButton = document.querySelector("#search")
 //Add an event listener to the button that runs the function sendApiRequest when it is clicked
 searchButton.addEventListener("click", ()=>{
   console.log("button pressed")
-  sendApiRequest()
+  for(let i = 0; i<3;i++){
+    sendApiRequest()
+  }
 })
 
 
@@ -19,6 +21,13 @@ async function sendApiRequest(){
 
 //function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
 function useApiData(data){
-document.querey.Selector("#content").innerHTML = data.this.url
+document.querySelector("#content").innerHTML += `
+<div class="card" style="width: 18rem;">
+  <img src="${data.message}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Random Dog, sucka!</p>
+  </div>
+</div>
+`
 }
 
