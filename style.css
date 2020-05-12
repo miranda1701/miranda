@@ -25,7 +25,7 @@ right:-0%;
 margin-left:10px;
 margin-bottom:100px;
 position:absolute;
-background: RGB(242, 196, 229);
+background: RGB(201, 198, 197);
 }
 
 a{
@@ -107,4 +107,8 @@ background: rgb(255, 241, 204);
 
 .carousel-item{
 margin: 100px;
+}
+
+.card{
+  display: inline-block
 }
